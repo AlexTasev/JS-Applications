@@ -1,0 +1,17 @@
+{{> header}}
+<div class="content">
+    {{> navigation}}
+    <div class="post">
+        {{> post}}
+    </div>
+    <div class="post post-content">
+        {{> postCommentForm}}
+    </div>
+    {{#each comments}}
+        {{> comment}}
+    {{else}}
+        <p>No comments for this post!</p>
+    {{/each}}
+</div>
+
+{{> footer}}

@@ -1,0 +1,9 @@
+<div class="controls">
+    <ul>
+        <li class="action"><a class="commentsLink" href="#/details/{{_id}}">details</a></li>
+        {{#if isAuthor}}
+        <li class="action"><a class="editLink" href="#/editpost/{{_id}}">edit</a></li>
+        <li class="action"><a class="deleteLink" href="#/deletepost/{{_id}}">delete</a></li>
+        {{/if}}
+    </ul>
+</div>
